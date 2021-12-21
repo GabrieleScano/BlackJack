@@ -2,7 +2,7 @@ const myModule = (() => {
     'use strict';
 
     let deck = [];
-    const tipos = ['C', 'D', 'H', 'S'],
+    const jacks = ['C', 'D', 'H', 'S'],
         specials = ['A', 'J', 'Q', 'K'];
 
     let playersPoints = [];
@@ -33,14 +33,14 @@ const myModule = (() => {
 
         deck = [];
         for (let i = 2; i <= 10; i++) {
-            for (let tipo of tipos) {
-                deck.push(i + tipo);
+            for (let jack of jacks) {
+                deck.push(i + jack);
             }
         }
 
-        for (let tipo of tipos) {
+        for (let jack of jacks) {
             for (let special of specials) {
-                deck.push(special + tipo);
+                deck.push(special + jack);
             }
         }
         return _.shuffle(deck);;
