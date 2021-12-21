@@ -13,11 +13,12 @@ html, body {
     font-size: 25px;
 }
 
-.carta {
+.card {
     position: relative;
     width: 150px;
     left: 100px;
     margin-left: -75px;
+    display: inline-flex;
 }
 
 #computer-cards, #player-cards {
