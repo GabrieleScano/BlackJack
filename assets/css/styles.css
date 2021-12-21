@@ -4,15 +4,6 @@ html, body {
     color: white;
 }
 
-
-.title {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-}
-
 .card {
     position: relative;
     width: 150px;
